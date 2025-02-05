@@ -22,7 +22,7 @@
 
         .container {
             display: flex;
-            width: 90vw;
+            width: 80vw;
             max-width: 1000px;
             gap: 10px;
         }
@@ -31,10 +31,9 @@
             position: relative;
             flex: 1;
             height: 400px;
-            border-radius: 20px;
+            border-radius: 30px;
             overflow: hidden;
             cursor: pointer;
-            transition: flex 0.5s ease-in-out;
         }
 
         .card img {
@@ -74,7 +73,7 @@
             <h3>City Lights</h3>
         </div>
         <div class="card active">
-            <img src="https://img.etimg.com/thumb/msid-112102040,width-640,height-480,imgsize-1820642,resizemode-4/cappadocia-turkey.jpg" alt="Balloon">
+            <img src="https://img.etimg.com/thumb/msid-112102040,width-600,height-480,imgsize-1820642,resizemode-4/cappadocia-turkey.jpg" alt="Balloon">
             <h3>EXPANDING CARDS</h3>
         </div>
         <div class="card">
@@ -92,25 +91,9 @@
         <div class="card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdoNm6abIxtCK0hwAENgs1mCQva-LtxNRFaA&s">
             <h3>City Lights</h3>
-        </div> -->
     </div>
 
-    <script>
-        const cards = document.querySelectorAll('.card');
 
-        cards.forEach(card => {
-            card.addEventListener('click', () => {
-                removeActiveClasses();
-                card.classList.add('active');
-            });
-        });
-
-        function removeActiveClasses() {
-            cards.forEach(card => {
-                card.classList.remove('active');
-            });
-        }
-    </script>
 
 </body>
 </html>
