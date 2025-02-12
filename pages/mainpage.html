@@ -5,39 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <style>
-       
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             text-align: center;
         }
+        
+        /* New Header Design */
         header {
             display: flex;
-            justify-content: flex-end;
-            background-color: #333;
-            padding: 10px 50px;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, #333, #555);
+            padding: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         header a {
             color: white;
             text-decoration: none;
-            margin-left: 20px;
+            margin: 0 15px;
             font-size: 18px;
-            transition: all 0.3s;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
         }
 
         header a:hover {
-            text-decoration: underline;
+            background-color: rgba(255, 255, 255, 0.2);
             color: #ffcc00;
         }
 
-        
+        /* Main Content */
         .main-content {
             padding: 50px;
             background-color: #fff;
-            margin: 20px 10%;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 30px 10%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
         }
 
         .main-content h1 {
@@ -51,44 +58,58 @@
             margin-top: 20px;
         }
 
+        /* Image */
+        .main-content img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button */
         .button {
             display: inline-block;
             background-color: #333;
             color: white;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 12px 25px;
+            font-size: 18px;
             text-decoration: none;
             margin-top: 30px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.2s;
         }
 
         .button:hover {
             background-color: #ffcc00;
+            color: #333;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
- 
+    <!-- Header Navigation -->
     <header>
         <a href="service.html">Service</a>
-        <a href="steve.html">Stevejobs</a>
+        <a href="steve.html">Steve Jobs</a>
         <a href="survey.html">Survey</a>
-        <a href="acheive.html">Achieve</a>
-        <a href="audio.html">playlist</a>
+        <a href="achieve.html">Achieve</a>
+        <a href="audio.html">Playlist</a>
         <a href="expanding.html">Expanding</a>
         <a href="login.html">Login</a>
         <a href="movie.html">Movie</a>
         <a href="signin.html">Sign In</a>
     </header>
 
- 
+    <!-- Main Content -->
     <div class="main-content">
         <h1>Welcome to Our Website</h1>
-<img src="https://media.istockphoto.com/id/517373852/photo/homepage-domain-html-web-design-concept.jpg?s=612x612&w=0&k=20&c=aXCsN4Fvpqr4Ae4zFJQJDYNUaWMzvIk2mbwbm7yK8yA=" height=500px width=700px>
+        <h3>Batch No: 9</h3>
+        <img src="https://media.istockphoto.com/id/517373852/photo/homepage-domain-html-web-design-concept.jpg?s=612x612&w=0&k=20&c=aXCsN4Fvpqr4Ae4zFJQJDYNUaWMzvIk2mbwbm7yK8yA=" alt="Homepage Image">
         
-        <center><a href="service.html" class="button">Explore</a></center>
+        <br>
+        <a href="service.html" class="button">Explore</a>
     </div>
 
 </body>
